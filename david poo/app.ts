@@ -1,0 +1,20 @@
+import { Empleado } from "./empleado.js";
+import{ Persona } from "./persona.js";
+import { PersonaServicio } from "./personaservicio.js";
+import { Estudiante } from "./estudiante.js";
+import { Profesor } from "./profesor.js";
+const persona = new Persona("David", "Fernandez", "1344842930", "Soltero");
+persona.cambiarEstadoCivil("soltero");
+const empleado = new Empleado("David", "Fernandez", "1344842930", "Soltero", 2010, 6078);
+empleado.despacho(7777);
+const estudiante = new Estudiante("David", "Fernandez", "1344842930", "Soltero","cinco","seis");
+estudiante.nuevaMatricula("Octavo")
+const personaservicio = new PersonaServicio("David", "Fernandez", "1344842930", "Soltero", 2010, 6078,"ocho");
+personaservicio.trasladoSeccion("cinco");
+const profesor = new Profesor("David", "Fernandez", "1344842930", "Soltero", 2010, 6078,"estadistica");
+profesor.cambioCurso("matematicas");
+console.log(persona);
+console.log(empleado);
+console.log(estudiante);
+console.log(personaservicio);
+console.log(profesor);
